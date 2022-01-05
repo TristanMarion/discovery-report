@@ -1,0 +1,27 @@
+.reveal img {
+    height: 1em;
+    margin: 0;
+}
+
+.reveal img.beamy-logo.semi {
+    opacity: 30%;
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal .slides .center {
+    text-align: center;
+}
+
+.reveal .slides ul {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+}
+
+.reveal h3 {
+    display: flex;
+    justify-content: space-between;
+}

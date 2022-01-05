@@ -6,18 +6,123 @@
 
 		<title>reveal.js</title>
 
+		<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="dist/custom.css">
+		<link rel="stylesheet" href="css/style.scss">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
-	<body>
+	<body style="position: relative;">
+		<div style="position: absolute; width: 100%; height: 100%; background-color: transparent; border: 16px solid #042859; box-sizing: border-box; border-bottom-width: 20px;"></div>
+		<div style="position: absolute; bottom: 4px; left: 50%; color: white; opacity: 0.8; font-family: Comfortaa; font-size: 12px;">Confidential</div>
+		<img style="position: absolute; left: 32px; bottom: 32px; height: 48px;" src="img/logo.png" alt="">
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="center">
+					<img src="img/beamy.png" style="width: 70%; height: auto;" alt="">
+					<p>Discovery report</p>
+					<div style="display: flex; justify-content: space-between; margin-top: 96px; font-size: 0.5em; align-items: end;">
+						<p style="text-align: left;">Tristan Marion <br> Software engineer 👨‍💻</p>
+						<p>January 2022</p>
+					</div>
+				</section>
+				<section class="center" style="text-align: left;">
+					<h3>
+						🤗 Onboarding Beamy
+						<div class="mark">
+							<img class="beamy-logo" src="img/logo.png" alt="">
+							<img class="beamy-logo" src="img/logo.png" alt="">
+							<img class="beamy-logo" src="img/logo.png" alt="">
+						</div>
+					</h3>
+					<ul>
+						<li>Notion page & articles</li>
+						<li>
+							Buddy
+							<i style="font-size: 0.5em;">(Alexis <img src="img/peepo.png">)</i>
+						</li>
+						<li>Meetings with all the teams</li>
+					</ul>
+					<h3>
+						🧑‍💻 Onboarding Tech
+						<div class="mark">
+							<img class="beamy-logo" src="img/logo.png" alt="">
+							<img class="beamy-logo semi" src="img/logo.png" alt="">
+							<img class="beamy-logo semi" src="img/logo.png" alt="">
+						</div>
+					</h3>
+					<ul>
+						<li>Lack of documentation / tutorials</li>
+						<li>Access to prod on day 1</li>
+						<li>Oral or private transmission</li>
+					</ul>
+				</section>
+				<section class="center" style="text-align: left;">
+					<h3 style="font-size: 1.05em;">
+						💬 Processes in engineering team
+						<div class="mark">
+							<img class="beamy-logo" src="img/logo.png" alt="">
+							<img class="beamy-logo" src="img/logo.png" alt="">
+							<img class="beamy-logo semi" src="img/logo.png" alt="">
+						</div>
+					</h3>
+					<ul>
+						<li>Good communication between teams</li>
+						<li>Short iterations / feedback loops </li>
+					</ul>
+					<h3 style="font-size: 1.05em;">
+						📝 Processes on tech side
+						<div class="mark">
+							<img class="beamy-logo" src="img/logo.png" alt="">
+							<img class="beamy-logo semi" src="img/logo.png" alt="">
+							<img class="beamy-logo semi" src="img/logo.png" alt="">
+						</div>
+					</h3>
+					<ul>
+						<li>Technical specifications</li>
+						<li>Ticket estimation</li>
+						<li>Little or no documentation</li>
+					</ul>
+				</section>
+				<section class="center" style="text-align: left;">
+					<h3>😲 What surprised me</h3>
+					<h4>👍 Good</h4>
+					<ul>
+						<li>All hands 🙌</li>
+						<li>Company wide team spirit 👨‍👩‍👧‍👦</li>
+						<li>Out of work activities 🍻 ⚽️ 🧗‍♀️</li>
+						<li>Continuous improvement 🧑📚</li>
+						<li>Size of engineering team 🤏</li>
+					</ul>
+					<h4>👎 Less good</h4>
+					<ul>
+						<li>Station F onboarding</li>
+						<li>Personal computer at the beginning</li>
+					</ul>
+				</section>
+				<section class="center" style="text-align: left;">
+					<h3>📈 What would I improve</h3>
+					<ul>
+						<li>Processes</li>
+						<ul>
+							<li>Technical specifications</li>
+							<li>Ticket estimation</li>
+						</ul>
+						<li>Documentation</li>
+						<li>Tech onboarding</li>
+					</ul>
+				</section>
+				<section class="center">
+					<h1 style="text-align: center;">Thank you 🙏</h1>
+					<h4 style="text-align: center;">Any questions ? 🤔</h4>
+				</section>
 			</div>
 		</div>
 
@@ -31,7 +136,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				center: false,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
